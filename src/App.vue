@@ -1,27 +1,32 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
-    <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
-      <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
-    </p>
-    <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
+    <main>
+      <header id="overview">
+        <resumeHeader></resumeHeader>
+      </header>
+      <article>
+        <section id="education">
+          <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
+          <education></education>
+        </section>
+        <section id="language">
+          <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
+          <internship></internship>
+        </section>
+        <section id="experience">
+          <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
+          <experience></experience>
+        </section>
+        <section id="skill">
+          <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
+          <skill></skill>
+        </section>
+      </article>
+      <footer><a href="https://github.com/idiotWu/my-resume" target="_blank">This resume</a> is built with Vue, Webpack and Stylus. <a href="assets/resume.pdf" target="_blank" rel="download">Download PDF</a> or <a id="print" href="javascript:;">print it</a>.
+      </footer>
+    </main>
   </div>
 </template>
-
 <script>
 import Hello from './components/Hello';
 
@@ -32,33 +37,57 @@ export default {
 };
 </script>
 
-<style>
-html {
-  height: 100%;
-}
+<style lang="stylus">
+@require 'assets/stylus/vars.styl'
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+body
+  margin: 0
+  padding: 50px
+  // font-family: $font-family
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
+  @media print
+    padding: 0
 
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
+main
+  display: block
+  margin: 0 auto
+  width: $A4-width
+  height: $A4-height
+  line-height: $line-height
+  box-shadow: 0 0 5px #ccc
+  box-sizing: border-box
+  overflow: hidden
 
-.logo {
-  width: 100px;
-  height: 100px
-}
+  @media print
+    box-shadow: none
+
+article
+  padding: ($white-space-size / 2) $white-space-size 
+  font-size: 14px
+
+  > section
+    margin-bottom: 1.5em
+
+    &:last-child
+      margin-bottom: 0
+
+
+a
+  text-decoration: none
+
+footer
+  text-align: center
+
+  @media print
+    display: none
+
+  a
+    color: $header-hightlight
+
+    &:hover
+      text-decoration: underline
+
+
 </style>
