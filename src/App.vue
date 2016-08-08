@@ -10,7 +10,7 @@
           <education></education>
         </section>
         <section id="language">
-          <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
+          <h2 class="section-title">教育历<small class="subtitle">education</small></h2>
           <internship></internship>
         </section>
         <section id="experience">
@@ -22,6 +22,7 @@
           <skill></skill>
         </section>
       </article>
+      {{resume}}
       <footer><a href="https://github.com/idiotWu/my-resume" target="_blank">This resume</a> is built with Vue, Webpack and Stylus. <a href="assets/resume.pdf" target="_blank" rel="download">Download PDF</a> or <a id="print" href="javascript:;">print it</a>.
       </footer>
     </main>
@@ -29,10 +30,16 @@
 </template>
 <script>
 import Hello from './components/Hello';
+import Resume from './main.js';
 
 export default {
   components: {
     Hello,
+  },
+  data() {
+    return {
+      resume: Resume.title,
+    };
   },
 };
 </script>

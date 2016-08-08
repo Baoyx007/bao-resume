@@ -1,0 +1,109 @@
+{
+  "title": "鲍勇翔 - 个人简历",
+  "name": "鲍勇翔",
+  "jobs": ["前端工程师"],
+  "contacts": {
+    "phone": "152-2162-0869",
+    "wechat": "@Haven009",
+    "email": "baoyx007@gmail.com"
+  },
+  "links": {
+    "blog": {
+      "url": "http://blog.byx.space"
+    },
+    "github": {
+      "username": "Baoyx007",
+      "url": "https://github.com/Baoyx007"
+    },
+    "segmentfault": {
+      "username": "havenee",
+      "url": "https://segmentfault.com/u/havenee"
+    }
+  },
+  "education": [{
+    "type": "undergraduate",
+    "school_name": "安徽工业大学",
+    "major": "计算机科学与技术",
+    "start": "2009",
+    "end": "2013"
+  }, {
+    "type": "master",
+    "school_name": "华东师范大学",
+    "major": "软件工程",
+    "start": "2014",
+    "end": "2017"
+  }],
+  "language": [{
+    "type": "英语",
+    "level": "60%",
+    "description": [
+      "能够阅读技术文档等专业资料",
+      "能够无障碍使用英文在论坛、邮件上交流"
+    ]
+  }, {
+    "type": "日语",
+    "level": "50%",
+    "description": [
+      "能够阅读日文书籍等文学作品",
+      "能够使用日语进行一定程度上的日常会话"
+    ]
+  }],
+  "experience": [{
+    "company": "触宝电话",
+    "summary": "软件开发工程师",
+    "start": "2016.05",
+    "end": "2016.08",
+    "description": [
+      "触宝游戏Android SDK",
+      "为了增强用户体验， 制作了可配置的悬浮球组件：",
+      "为了增强用户体验， 制作了游戏内语音通话功能：",
+      "基于 `Vue` 的SPA后台管理应用",
+      "基于 `Angular` 的 SPA 股票应用（\\[https://a.jimu.com\\]\\(https://a.jimu.com\\)）开发",
+      "为实现更好的数据绑定，制作了 `observable.js` 库：\\[https://github.com/idiotWu/observable\\]\\(https://github.com/idiotWu/observable\\)",
+      "为解决移动端滚动性能，编写了一个高性能的滚动条组件：\\[https://github.com/idiotWu/smooth-scrollbar\\]\\(https://github.com/idiotWu/smooth-scrollbar\\)",
+      "使用 `canvas` 与 `File API` 构建了 Web 端的图片压缩模块：\\[https://github.com/idiotWu/canvas-compress\\]\\(https://github.com/idiotWu/canvas-compress\\)",
+      "通过 `postMessage API` 解决了单页面应用下的单点登录（SSO）问题",
+      "使用 `gulp` 和 `Node.js` 改进了工作流，提高了团队开发效率"
+    ]
+  }, {
+    "company": "小酱油（Part-time）",
+    "summary": "富文本编辑器开发",
+    "start": "2015.02",
+    "end": "2015.03",
+    "description": [
+      "pcap anlyzer + github",
+      "aadl + github",
+      "基于 `UEditor` 的富文本编辑器开发，重构了**图片上传**等部分模块",
+      "开发期间为 `UEditor` 提交了一个新的超链接推导方案：\\[https://github.com/fex-team/ueditor/pull/1834\\]\\(https://github.com/fex-team/ueditor/pull/1834\\)"
+    ]
+  }],
+  "skill": [{
+    "summary": "熟悉 `HTML` / `CSS`",
+    "description": [
+      "熟悉 `HTML5`，能够编写语义良好的 `HTML`",
+      "熟悉 `CSS3` 新特性，对 `CSS` 动画性能有一定了解",
+      "能够独立完成较复杂的 UI 开发"
+    ]
+  }, {
+    "summary": "熟悉 `JavaScript`",
+    "description": [
+      "熟悉 `Vue` 及其部分实现",
+      "了解原生 `DOM` / `BOM`，了解相关标准",
+      "了解 `ECMAScript 6` 的主要特性，并有相关开发经历"
+    ]
+  }, {
+    "summary": "熟悉 `Python`",
+    "description": [
+      "了解 `Python 异步模式`",
+      "能够使用 `http` 模块构造爬虫",
+      "能够编写基于 `Node.js` 的脚本改善 workflow"
+    ]
+  }, {
+    "summary": "其它",
+    "description": [
+      "有 `Android` 开发经验",
+      "有 `SPA` 开发经验，对前端 `MV*` 模型有一定了解",
+      "有 `Webpack + Gulp` 打包和工作流 使用经验"
+    ]
+  }]
+}
