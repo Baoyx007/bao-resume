@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <main>
-      <header id="overview">
-        <resumeHeader></resumeHeader>
+      <header >
+        <resume-header></resume-header>
       </header>
       <article>
-        <section id="education">
+        <section id="education" class="card-panel">
           <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
           <education></education>
         </section>
@@ -14,7 +14,7 @@
           <internship></internship>
         </section>
         <section id="experience">
-          <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
+          <h2 class="section-title">教育历<small class="subtitle">education</small></h2>
           <experience></experience>
         </section>
         <section id="skill">
@@ -22,35 +22,30 @@
           <skill></skill>
         </section>
       </article>
-      {{resume}}
-      <footer><a href="https://github.com/idiotWu/my-resume" target="_blank">This resume</a> is built with Vue, Webpack and Stylus. <a href="assets/resume.pdf" target="_blank" rel="download">Download PDF</a> or <a id="print" href="javascript:;">print it</a>.
-      </footer>
     </main>
+    <footer>
+      <a href="https://github.com/idiotWu/my-resume" target="_blank">This resume</a> is powered by Vue, Webpack and Stylus. <a href="assets/resume.pdf" target="_blank" rel="download">Download PDF</a> or <a id="print" href="javascript:;">print it</a>.
+      </footer>
   </div>
 </template>
 <script>
-import Hello from './components/Hello';
-import Resume from './main.js';
+import resumeHeader from './components/resumeHeader';
 
 export default {
   components: {
-    Hello,
-  },
-  data() {
-    return {
-      resume: Resume.title,
-    };
+    resumeHeader,
   },
 };
 </script>
 
 <style lang="stylus">
 @require 'assets/stylus/vars.styl'
+@require 'assets/stylus/vendor/open-sans.styl'
 
 body
   margin: 0
   padding: 50px
-  // font-family: $font-family
+  font-family: $font-family
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
@@ -66,13 +61,16 @@ main
   box-shadow: 0 0 5px #ccc
   box-sizing: border-box
   overflow: hidden
+  background-color:$container-color
+
 
   @media print
     box-shadow: none
 
 article
-  padding: ($white-space-size / 2) $white-space-size 
+  padding: ($white-space-size / 2) $white-space-size
   font-size: 14px
+
 
   > section
     margin-bottom: 1.5em
@@ -96,5 +94,41 @@ footer
     &:hover
       text-decoration: underline
 
+h1
+h2
+h3
+h4
+  margin: 0
+  font-weight: $font-weight-bold
+
+.section-title
+  color: $section-title
+  padding-bottom: 6px
+  border-bottom: 1px dashed $muted-text-color
+
+.subtitle
+  display: inline-block
+  padding-left: 1em
+  text-transform: capitalize
+  color: $subtitle
+  vertical-align: bottom
+
+code
+  font-family: $font-family
+  font-size: 1em
+  font-weight: $font-weight-bold
+  color: $code-color
+ul
+ol
+dl
+  margin: 0
+  padding: 0
+  list-style: none
+
+li
+  line-height: $line-height
+
+dt
+  display: list-item
 
 </style>
