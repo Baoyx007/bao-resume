@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App';
-import './store.js';
+// import './store.js';
 
 
 // import 'materialize-css/dist/css/materialize.css';

@@ -37,7 +37,7 @@
 </template>
 
 <script>
-	import Resume from '../store.js';
+	import Resume from '../resume.json';
 
 	export default {
   data() {
@@ -48,10 +48,11 @@
 };
 </script>
 
-<style lang="stylus">
-@require '../assets/stylus/vars.styl'
-@require '../assets/stylus/vendor/icomoon.styl'
-@require '../assets/stylus/vendor/kai-gen-gothic.styl'
+<style lang="stylus" scoped>
+// @require '../assets/stylus/vars.styl'
+// @require '../assets/stylus/vendor/icomoon.styl'
+// @require '../assets/stylus/vendor/kai-gen-gothic.styl'
+@require '../assets/stylus/style.styl'
 
 #overview
   padding: $white-space-size $white-space-size .5em

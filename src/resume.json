@@ -32,22 +32,7 @@
     "start": "2014",
     "end": "2017"
   }],
-  "language": [{
-    "type": "英语",
-    "level": "60%",
-    "description": [
-      "能够阅读技术文档等专业资料",
-      "能够无障碍使用英文在论坛、邮件上交流"
-    ]
-  }, {
-    "type": "日语",
-    "level": "50%",
-    "description": [
-      "能够阅读日文书籍等文学作品",
-      "能够使用日语进行一定程度上的日常会话"
-    ]
-  }],
-  "experience": [{
+  "internship": [{
     "company": "触宝电话",
     "summary": "软件开发工程师",
     "start": "2016.05",
@@ -55,7 +40,6 @@
     "description": [
       "触宝游戏Android SDK",
       "为了增强用户体验， 制作了可配置的悬浮球组件：",
-      "为了增强用户体验， 制作了游戏内语音通话功能：",
       "基于 `Vue` 的SPA后台管理应用",
       "基于 `Angular` 的 SPA 股票应用（\\[https://a.jimu.com\\]\\(https://a.jimu.com\\)）开发",
       "为实现更好的数据绑定，制作了 `observable.js` 库：\\[https://github.com/idiotWu/observable\\]\\(https://github.com/idiotWu/observable\\)",
@@ -64,8 +48,8 @@
       "通过 `postMessage API` 解决了单页面应用下的单点登录（SSO）问题",
       "使用 `gulp` 和 `Node.js` 改进了工作流，提高了团队开发效率"
     ]
-  }, {
-    "company": "小酱油（Part-time）",
+  }],
+  "project":[{
     "summary": "富文本编辑器开发",
     "start": "2015.02",
     "end": "2015.03",

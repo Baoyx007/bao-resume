@@ -5,20 +5,20 @@
         <resume-header></resume-header>
       </header>
       <article>
-        <section id="education" class="card-panel">
+        <section id="education" >
           <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
           <education></education>
         </section>
         <section id="language">
-          <h2 class="section-title">教育历<small class="subtitle">education</small></h2>
+          <h2 class="section-title">实习经历<small class="subtitle">internship</small></h2>
           <internship></internship>
         </section>
         <section id="experience">
-          <h2 class="section-title">教育历<small class="subtitle">education</small></h2>
+          <h2 class="section-title">项目经历<small class="subtitle">project</small></h2>
           <experience></experience>
         </section>
         <section id="skill">
-          <h2 class="section-title">教育经历<small class="subtitle">education</small></h2>
+          <h2 class="section-title">相关技能<small class="subtitle">skill</small></h2>
           <skill></skill>
         </section>
       </article>
@@ -30,17 +30,18 @@
 </template>
 <script>
 import resumeHeader from './components/resumeHeader';
+import education from './components/education';
 
 export default {
   components: {
     resumeHeader,
+    education,
   },
 };
 </script>
 
 <style lang="stylus">
-@require 'assets/stylus/vars.styl'
-@require 'assets/stylus/vendor/open-sans.styl'
+@require 'assets/stylus/style.styl'
 
 body
   margin: 0
@@ -61,7 +62,7 @@ main
   box-shadow: 0 0 5px #ccc
   box-sizing: border-box
   overflow: hidden
-  background-color:$container-color
+  // background-color:$container-color
 
 
   @media print

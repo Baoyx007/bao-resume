@@ -21,12 +21,6 @@ module.exports = {
       'components': path.resolve(__dirname, '../src/components')
     }
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    })
-  ],
   resolveLoader: {
     fallback: [path.join(__dirname, '../node_modules')]
   },
