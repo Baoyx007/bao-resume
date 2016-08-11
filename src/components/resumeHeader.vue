@@ -3,8 +3,6 @@
 		<section id="profile">
 		    <h1 id="name" class="highlight">{{resume.name}}</h1>
 		    <h2 id="jobs" v-if="resume.jobs">
-		        <!-- <small class="description">求职意向：</small> -->
-
 		        <div class="job" class="highlight" v-for="job in resume.jobs">{{job}}</div>
 		    </h2>
 		</section>

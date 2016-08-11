@@ -41,9 +41,9 @@ export default {
   align-items: center
   border-bottom: 1px dashed $muted-text-color
 
-&:last-child
-  border-bottom: none
-  padding-bottom: 0
+  &:last-child
+    border-bottom: none
+    padding-bottom: 0
 
 .timeline
   font-weight: $font-weight-bold

@@ -41,25 +41,38 @@
       "触宝游戏Android SDK",
       "为了增强用户体验， 制作了可配置的悬浮球组件：",
       "基于 `Vue` 的SPA后台管理应用",
-      "基于 `Angular` 的 SPA 股票应用（\\[https://a.jimu.com\\]\\(https://a.jimu.com\\)）开发",
-      "为实现更好的数据绑定，制作了 `observable.js` 库：\\[https://github.com/idiotWu/observable\\]\\(https://github.com/idiotWu/observable\\)",
-      "为解决移动端滚动性能，编写了一个高性能的滚动条组件：\\[https://github.com/idiotWu/smooth-scrollbar\\]\\(https://github.com/idiotWu/smooth-scrollbar\\)",
-      "使用 `canvas` 与 `File API` 构建了 Web 端的图片压缩模块：\\[https://github.com/idiotWu/canvas-compress\\]\\(https://github.com/idiotWu/canvas-compress\\)",
-      "通过 `postMessage API` 解决了单页面应用下的单点登录（SSO）问题",
-      "使用 `gulp` 和 `Node.js` 改进了工作流，提高了团队开发效率"
+      "使用 `Webpack` 和 `Node.js` 改进了工作流，提高了团队开发效率"
     ]
   }],
   "project":[{
-    "summary": "富文本编辑器开发",
+    "summary": "Resume Gen",
+    "start": "2015.08",
+    "end": "2015.08",
+    "description": [
+      "Vue + Stylus+ Webpack ",
+      "基于font-spider增加了js搜索"
+    ]
+  },
+  {
+    "summary": "Pcap开发",
     "start": "2015.02",
     "end": "2015.03",
     "description": [
       "pcap anlyzer + github",
-      "aadl + github",
-      "基于 `UEditor` 的富文本编辑器开发，重构了**图片上传**等部分模块",
-      "开发期间为 `UEditor` 提交了一个新的超链接推导方案：\\[https://github.com/fex-team/ueditor/pull/1834\\]\\(https://github.com/fex-team/ueditor/pull/1834\\)"
+      "python + flask+jinja",
+      "http ，数据包 ，"
     ]
-  }],
+  },
+  {
+    "summary": "AADL2UPPAAL编译器开发",
+    "start": "2015.02",
+    "end": "2015.03",
+    "description": [
+      "AADL2UPPAAL + github",
+      "Java+ JDom, 编译器,xml"
+    ]
+  }
+  ],
   "skill": [{
     "summary": "熟悉 `HTML` / `CSS`",
     "description": [
@@ -79,14 +92,14 @@
     "description": [
       "了解 `Python 异步模式`",
       "能够使用 `http` 模块构造爬虫",
-      "能够编写基于 `Node.js` 的脚本改善 workflow"
+      "能够编写基于 `Tornado` 的Web服务器"
     ]
   }, {
     "summary": "其它",
     "description": [
       "有 `Android` 开发经验",
       "有 `SPA` 开发经验，对前端 `MV*` 模型有一定了解",
-      "有 `Webpack + Gulp` 打包和工作流 使用经验"
+      "有 `Webpack` 打包和工作流 使用经验"
     ]
   }]
 }

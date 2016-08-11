@@ -1,24 +1,73 @@
 <template>
     <div>
-        <div class="item" v-for='exp in experience'>
+        <div class="item" v-for='intern in internship'>
             <div class="content">
                 <header class="expr-title">
                     <div class="info">
-                        <h3 class="company">{{#if company}}{{company}}{{^}}{{project}}{{/if}}</h3>
-                        <h4 class="summary">{{{summary}}}</h4>
+                        <h3 class="company">{{intern.company}}</h3>
+                        <h4 class="summary">{{{intern.summary}}}</h4>
                     </div>
                     <aside class="timeline">
-                        <time>{{start}} {{#if end}}~ {{end}}{{^}}至今{{/if}}</time>
+                        <time>{{intern.start}} ~  {{intern.end|至今}}</time>
                     </aside>
                 </header>
                 <dl class="details">
-                    {{#each description}}
-                        <dt>
-                            {{~{this}~}}
-                        </dt>
-                    {{/each}}
+                    <dt v-for=" desc in intern.description">
+                        {{{desc |  marked}}}
+                    </dt>
                 </dl>
             </div>
         </div>
     <div>
 </template>
+
+<script>
+import Resume from '../resume.json';
+
+export default {
+  data() {
+    return {
+      internship: Resume.internship,
+    };
+  },
+};
+</script>
+
+
+
+
+<style lang="stylus" scoped>
+@require '../assets/stylus/style.styl'
+
+.expr-title
+    @extend $justify
+    font-size: 16px
+
+.company
+.summary
+    flex: 1
+
+.summary
+    color: $code-color
+
+
+.timeline
+  font-weight: $font-weight-bold
+
+      
+dt
+  display: list-item
+  list-style-type: square
+  
+
+a
+  color: $code-color
+  font-weight: $font-weight-bold
+
+.details
+    margin-top: 8px
+    margin-left: 18px 
+
+   
+        
+</style>

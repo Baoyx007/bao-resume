@@ -8,8 +8,10 @@ import App from './App';
 // import 'materialize-css/js/init.js';
 
 import description from './filters/description';
+import marked from 'marked';
 
 Vue.filter('description', description);
+Vue.filter('marked', marked);
 
 /* eslint-disable no-new */
 new Vue({

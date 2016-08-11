@@ -31,11 +31,15 @@
 <script>
 import resumeHeader from './components/resumeHeader';
 import education from './components/education';
+import internship from './components/internship';
+import skill from './components/skills';
 
 export default {
   components: {
     resumeHeader,
     education,
+    internship,
+    skill,
   },
 };
 </script>
@@ -132,4 +136,8 @@ li
 dt
   display: list-item
 
+p
+  margin:0   
+  display:inline    
+  
 </style>
