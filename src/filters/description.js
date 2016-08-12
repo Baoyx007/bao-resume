@@ -5,6 +5,12 @@ const map = {
   segmentfault: 'Segment Fault',
 };
 
-export default function description(value) {
+export const description = function (value) {
   return (map[value.toLowerCase()] || value);
-}
+};
+
+export const urlTarget = function (value, type) {
+  console.log(type);
+  return value.replace(/href=/gi, ` target=${type} href=`);
+};
+

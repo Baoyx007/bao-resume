@@ -7,10 +7,11 @@ import App from './App';
 // import 'materialize-css/dist/js/materialize.js';
 // import 'materialize-css/js/init.js';
 
-import description from './filters/description';
+import { description, urlTarget } from './filters/description';
 import marked from 'marked';
 
 Vue.filter('description', description);
+Vue.filter('urlTarget', urlTarget);
 Vue.filter('marked', marked);
 
 /* eslint-disable no-new */

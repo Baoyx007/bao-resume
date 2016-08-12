@@ -8,12 +8,12 @@
                         <h4 class="summary">{{{intern.summary}}}</h4>
                     </div>
                     <aside class="timeline">
-                        <time>{{intern.start}} ~  {{intern.end|至今}}</time>
+                        <time>{{intern.start}} ~  {{intern.end || 至今}}</time>
                     </aside>
                 </header>
                 <dl class="details">
                     <dt v-for=" desc in intern.description">
-                        {{{desc |  marked}}}
+                        {{{desc |  marked | urlTarget '_blank'}}}
                     </dt>
                 </dl>
             </div>
@@ -22,14 +22,14 @@
 </template>
 
 <script>
-import Resume from '../resume.json';
 
 export default {
-  data() {
-    return {
-      internship: Resume.internship,
-    };
-  },
+  props: ['internship'],
+  // data() {
+  //   return {
+  //     internship: Resume.internship,
+  //   };
+  // },
 };
 </script>
 
@@ -60,14 +60,15 @@ dt
   list-style-type: square
   
 
-a
-  color: $code-color
-  font-weight: $font-weight-bold
+  a
+    color: $code-color
+    font-weight: $font-weight-bold
 
 .details
     margin-top: 8px
     margin-left: 18px 
 
-   
+.content
+  margin-top: 8px
         
 </style>

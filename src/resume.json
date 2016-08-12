@@ -9,6 +9,7 @@
   },
   "links": {
     "blog": {
+      "username":"blog.byx.space",
       "url": "http://blog.byx.space"
     },
     "github": {
@@ -28,7 +29,7 @@
   }, {
     "type": "master",
     "school_name": "华东师范大学",
-    "major": "软件工程",
+    "major": "软件工程(软件理论)",
     "start": "2014",
     "end": "2017"
   }],
@@ -45,39 +46,40 @@
     ]
   }],
   "project":[{
-    "summary": "Resume Gen",
-    "start": "2015.08",
-    "end": "2015.08",
+    "summary": "简历生成应用",
+    "start": "2016.07",
+    "end": "2016.07",
     "description": [
-      "Vue + Stylus+ Webpack ",
-      "基于font-spider增加了js搜索"
+      "基于`Vue` + `Stylus` + `Webpack` 完成的单页应用 github",
+      "由于现有的库都不支持提取Js动态插入的中文字符，基于font-spider增加了js中中文搜索功能 github"
     ]
   },
   {
-    "summary": "Pcap开发",
-    "start": "2015.02",
-    "end": "2015.03",
+    "summary": "数据包隐私信息自动提取应用",
+    "start": "2015.11",
+    "end": "2015.12",
     "description": [
-      "pcap anlyzer + github",
-      "python + flask+jinja",
-      "http ，数据包 ，"
+      "开发了自动提取和展示数据包中的隐私信息的工具: [github.com/Baoyx007/pcap-analyzer](https://github.com/Baoyx007/pcap-analyzer)",
+      "使用`Flask`开发出RESTful api, 使用`highcharts.js`显示数据包统计信息 ",
+      "难点在于数据包的HTTP层信息的提取, 和隐私信息的正则表达式自动生成"
     ]
   },
   {
-    "summary": "AADL2UPPAAL编译器开发",
-    "start": "2015.02",
-    "end": "2015.03",
+    "summary": "AADL语言编译器",
+    "start": "2015.06",
+    "end": "2015.11",
     "description": [
-      "AADL2UPPAAL + github",
-      "Java+ JDom, 编译器,xml"
+      "为实现AADL语言的量化分析，实现了将AADL转为时间自动机的编译器: [github.com/Baoyx007/aadl2uppaal](https://github.com/Baoyx007/aadl2uppaal)",
+      "为支持不确定性建模，扩展了AADL语言的语义和语法",
+      "基于 `JDom` + `正则表达式` 完成了 Parsing 模块，基于 `元模型` 完成了 Transform 模块"
     ]
   }
   ],
   "skill": [{
-    "summary": "熟悉 `HTML` / `CSS`",
+    "summary": "了解 `HTML` / `CSS`",
     "description": [
-      "熟悉 `HTML5`，能够编写语义良好的 `HTML`",
-      "熟悉 `CSS3` 新特性，对 `CSS` 动画性能有一定了解",
+      "了解 `HTML5`，能够编写语义良好的 `HTML`",
+      "了解 `CSS3` 新特性，对 `CSS` 动画有一定了解",
       "能够独立完成较复杂的 UI 开发"
     ]
   }, {
@@ -92,14 +94,14 @@
     "description": [
       "了解 `Python 异步模式`",
       "能够使用 `http` 模块构造爬虫",
-      "能够编写基于 `Tornado` 的Web服务器"
+      "能够编写基于 `Tornado` 的Web服务器后端代码"
     ]
   }, {
     "summary": "其它",
     "description": [
       "有 `Android` 开发经验",
-      "有 `SPA` 开发经验，对前端 `MV*` 模型有一定了解",
-      "有 `Webpack` 打包和工作流 使用经验"
+      "有 `SPA` 开发经验，对前端 组件化开发有一定了解",
+      "对 安全渗透, 逆向工程有一定了解及开发经验"
     ]
   }]
 }

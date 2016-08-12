@@ -11,11 +11,11 @@
         </section>
         <section id="language">
           <h2 class="section-title">实习经历<small class="subtitle">internship</small></h2>
-          <internship></internship>
+          <internship :internship='internship'></internship>
         </section>
         <section id="experience">
           <h2 class="section-title">项目经历<small class="subtitle">project</small></h2>
-          <experience></experience>
+          <internship :internship='project'></internship>
         </section>
         <section id="skill">
           <h2 class="section-title">相关技能<small class="subtitle">skill</small></h2>
@@ -29,6 +29,8 @@
   </div>
 </template>
 <script>
+import Resume from './resume.json';
+
 import resumeHeader from './components/resumeHeader';
 import education from './components/education';
 import internship from './components/internship';
@@ -40,6 +42,12 @@ export default {
     education,
     internship,
     skill,
+  },
+  data() {
+    return {
+      project: Resume.project,
+      internship: Resume.internship,
+    };
   },
 };
 </script>
@@ -86,6 +94,7 @@ article
 
 a
   text-decoration: none
+  color: $code-color
 
 footer
   text-align: center

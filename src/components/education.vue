@@ -9,6 +9,7 @@
             <time class="timeline">{{edu.start}} ~ {{edu.end}}</time>
         </aside>
     </div> 
+    {{msg}}
   </div>
 </template>
 
