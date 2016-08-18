@@ -39,19 +39,18 @@
     "start": "2016.05",
     "end": "2016.08",
     "description": [
-      "触宝游戏Android SDK",
-      "为了增强用户体验， 制作了可配置的悬浮球组件：",
-      "基于 `Vue` 的SPA后台管理应用",
-      "使用 `Webpack` 和 `Node.js` 改进了工作流，提高了团队开发效率"
+      "参与开发触宝游戏Android SDK",
+      "为了增强用户体验, 制作了可配置的悬浮球 `UI` 组件",
+      "使用 `Vue` + `Vuex` 的重构了后台管理页面, 提高了开发效率"
     ]
   }],
   "project":[{
-    "summary": "简历生成应用",
+    "summary": "前端小应用(part-time)",
     "start": "2016.07",
-    "end": "2016.07",
+    "end": "2016.08",
     "description": [
-      "基于`Vue` + `Stylus` + `Webpack` 完成的单页应用 github",
-      "由于现有的库都不支持提取Js动态插入的中文字符，基于font-spider增加了js中中文搜索功能 github"
+      "基于`Vue` + `Stylus` + `Webpack` 完成的简历生成应用 [github.com/Baoyx007/bao-resume](https://github.com/Baoyx007/bao-resume)",
+      "基于 `Websocket` 网页聊天室: [https://byx.space/chat_room](https://byx.space/chat_room/)"
     ]
   },
   {
@@ -78,29 +77,29 @@
   "skill": [{
     "summary": "了解 `HTML` / `CSS`",
     "description": [
-      "了解 `HTML5`，能够编写语义良好的 `HTML`",
-      "了解 `CSS3` 新特性，对 `CSS` 动画有一定了解",
+      "了解 `HTML5`, 能够编写语义良好的 `HTML`",
+      "了解 `CSS3` 新特性, 了解 `Stylus` 等 CSS 预处理器",
       "能够独立完成较复杂的 UI 开发"
     ]
   }, {
     "summary": "熟悉 `JavaScript`",
     "description": [
       "熟悉 `Vue` 及其部分实现",
-      "了解原生 `DOM` / `BOM`，了解相关标准",
-      "了解 `ECMAScript 6` 的主要特性，并有相关开发经历"
+      "有 `Node` 使用经验",
+      "了解 `ECMAScript 6` 的主要特性"
     ]
   }, {
     "summary": "熟悉 `Python`",
     "description": [
       "了解 `Python 异步模式`",
-      "能够使用 `http` 模块构造爬虫",
+      "能够使用 `Requests` 模块构造爬虫",
       "能够编写基于 `Tornado` 的Web服务器后端代码"
     ]
   }, {
     "summary": "其它",
     "description": [
       "有 `Android` 开发经验",
-      "有 `SPA` 开发经验，对前端 组件化开发有一定了解",
+      "有 `SPA` 开发经验，对前端组件化开发有一定了解",
       "对 安全渗透, 逆向工程有一定了解及开发经验"
     ]
   }]

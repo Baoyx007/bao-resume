@@ -37,6 +37,7 @@ export default {
 .grid-item
   width: 50%
   margin-top: 1em
+  // margin-bottom: 1em
   box-sizing: border-box
   
 
